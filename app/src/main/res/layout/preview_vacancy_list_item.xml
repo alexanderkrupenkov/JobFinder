@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relPreviewVac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/vacancyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Android developer"
+            android:layout_margin="6dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/vacancyDateCreated" />
+
+        <TextView
+            android:id="@+id/employerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Forte group"
+            android:textSize="14sp"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/vacancyName" />
+
+        <TextView
+            android:id="@+id/vacancyDateCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date"
+            android:textSize="14sp"
+            android:layout_margin="6dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

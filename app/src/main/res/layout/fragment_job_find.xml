@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewSwitcher2" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="#fff7f7f7">
+
+            <EditText
+                android:id="@+id/textSearch"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autoText="true"
+                android:inputType="text"
+                android:text="Поиск"
+                android:layout_alignTop="@+id/btStartFindJob"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btStartFindJob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Найти работу"
+                style="@style/TextButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="3dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff7f7f7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Твое месторасположение"
+                android:id="@+id/textJust"
+                android:layout_margin="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Москва"
+                android:id="@+id/nameLocation"
+                android:layout_margin="12dp" />
+        </LinearLayout>
+
+    </ViewSwitcher>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#ffcc7070"></LinearLayout>
+
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewSwitcher" >
+
+        <include
+            layout="@layout/layout_loading"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView" />
+    </ViewSwitcher>
+
+</LinearLayout>
